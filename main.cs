@@ -23,7 +23,6 @@ class Program
         // process and output
         if (userInput < 0)
         {
-            Console.Clear();
             Console.WriteLine("Input a positive whole number.");
         }
         else
