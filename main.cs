@@ -28,13 +28,13 @@ class Program
         }
         else
         {
-            for (int counter = 1; counter <= userInput; counter++) 
+            for (int counter = 1; counter <= userInput; counter++)
             {
                 answer += counter;
             }
 
             Console.WriteLine("");
-            Console.WriteLine("The answer is " + answer);
+            Console.WriteLine("The answer is " + answer + ".");
         }
 
         Console.WriteLine("\nDone.");
