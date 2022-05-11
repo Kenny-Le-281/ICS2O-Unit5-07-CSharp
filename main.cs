@@ -11,27 +11,33 @@ class Program
     {
         // This function performs a loop
         int userInput;
+        int answer = 0;
         int counter = 1;
 
         // input
-        Console.WriteLine("The sum of a natural numbers");
+        Console.WriteLine("The sum of natural numbers");
 
         Console.WriteLine("");
         Console.Write("Please enter a positive whole number: ");
         userInput = Convert.ToInt32(Console.ReadLine());
 
-        // process
+        // process and output
         if (userInput < 0)
         {
-            Console.Writeline("Please input a positive whole number!");
+            Console.Clear();
+            Console.WriteLine("Input a positive whole number.");
         }
         else
         {
-            for (counter = 1; counter <= userInput; counter++) {
+            for (counter = 1; counter <= userInput; counter++) 
+            {
+                answer += counter;
+            }
+
+            Console.WriteLine("");
+            Console.WriteLine("The answer is " + answer);
         }
 
-        // output
-        Console.WriteLine("The answer is " + answer);
         Console.WriteLine("\nDone.");
     }
 }
