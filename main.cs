@@ -12,7 +12,6 @@ class Program
         // This function performs a loop
         int userInput;
         int answer = 0;
-        int counter = 1;
 
         // input
         Console.WriteLine("The sum of natural numbers");
@@ -29,7 +28,7 @@ class Program
         }
         else
         {
-            for (counter = 1; counter <= userInput; counter++) 
+            for (int counter = 1; counter <= userInput; counter++) 
             {
                 answer += counter;
             }
